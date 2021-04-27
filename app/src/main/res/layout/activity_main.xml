@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+
+    tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400sp"
+
+        android:text="Welcome to our club!"
+        android:textAllCaps="true"
+        android:textColor="@color/silver"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="480sp"
+        android:background="@drawable/rounded_btn"
+        android:padding="10sp"
+        android:text="Join"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_welcome" />
+
+    <EditText
+
+        android:id="@+id/edit_text_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:padding="3sp"
+        android:background="@color/silver"
+        android:backgroundTint="@color/silver"
+        android:hint="Telephone number №"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_welcome"
+
+        />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15sp"
+        android:padding="3sp"
+        android:layout_height="wrap_content"
+        android:background="@color/silver"
+        android:backgroundTint="@color/silver"
+        android:hint="Payment card number №"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_number"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
